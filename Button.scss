@@ -1,0 +1,135 @@
+@import '../../styles/variables';
+
+/*------------------------------------*\
+  #BUTTON
+\*------------------------------------*/
+.Button {
+	height: 50px;
+	border-radius: 50px;
+	letter-spacing: 0.5px;
+	border: solid 1px black;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+	margin-top: 15px;
+	transition: all 0.11s ease-in-out;
+	white-space: nowrap;
+
+	&--default {
+		width: 130px;
+		color: white;
+		font-size: 12px;
+		background-color: $primary-blue;
+		border: solid 1px $primary-blue;
+		box-shadow: 0 20px 15px -10px rgba(30, 52, 175, 0.19);
+
+		&:hover {
+			color: white;
+			background-color: black;
+			border: solid 1px black;
+		}
+
+		&.Button--disabled {
+			cursor: not-allowed;
+			background-color: #dddddd;
+			border: solid 1px #dddddd;
+			color: white;
+			box-shadow: none;
+		}
+	}
+
+	&--send-magic {
+		width: 190px;
+		color: white;
+		font-size: 12px;
+		background-color: $primary-blue;
+		border: solid 1px $primary-blue;
+		box-shadow: 0 20px 15px -10px rgba(30, 52, 175, 0.19);
+
+		&:hover {
+			color: white;
+			background-color: black;
+			border: solid 1px black;
+		}
+
+		&.Button--disabled {
+			cursor: not-allowed;
+			background-color: #dddddd;
+			border: solid 1px #dddddd;
+			color: white;
+			box-shadow: none;
+		}
+	}
+
+	&--google {
+		width: 360px;
+		height: 86px;
+		font-size: 12px;
+		color: white;
+		background-color: black;
+		display: flex;
+		justify-content: center;
+		border-radius: 0px;
+		border-bottom-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+		border: none;
+
+		&:active {
+			background-color: #f9f9f9;
+			box-shadow: 0 0 12px -3px rgba(0, 0, 0, 0.12);
+		}
+
+		&:hover {
+			color: white;
+			background-color: #e7432f;
+		}
+
+		&__googleLogo {
+			background-image: url('../../assets/images/google.svg');
+			width: 20px;
+			height: 20px;
+			margin-left: 19px;
+			filter: brightness(0) invert(1);
+		}
+
+		&__googleText {
+			position: relative;
+			font-weight: 500;
+			top: 4px;
+			right: 10px;
+			margin-left: 30px;
+		}
+	}
+
+	@media (max-width: 500px) {
+		&--default,
+		&--send-magic {
+			width: 300px;
+			min-height: 50px;
+		}
+		&--google {
+			min-width: 100%;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			flex-grow: 1;
+		}
+	}
+}
+
+@-moz-document url-prefix() {
+	.Button--google {
+		&__googleLogo {
+			background-image: url('/static/media/google.695a3160.svg');
+			width: 20px;
+			height: 20px;
+			position: relative;
+			top: 33px;
+		}
+		&__googleText {
+			position: relative;
+			top: 37px;
+			font-weight: 500;
+		}
+	}
+}
