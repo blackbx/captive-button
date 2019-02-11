@@ -3,9 +3,10 @@
   "version": "1.0.2",
   "description": "",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.js"
   },
   "dependencies": {
     "@types/node": "^10.12.15",
@@ -15,7 +16,9 @@
     "react": "^16.6.3"
   },
   "devDependencies": {
+    "cssnano": "^4.1.8",
     "react-testing-library": "^5.4.4",
+    "sass": "^1.17.0",
     "ts-jest": "^23.10.5",
     "typescript": "^3.2.4",
     "typescript-tslint-plugin": "^0.3.0"

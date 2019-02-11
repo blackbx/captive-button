@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import './styles/variables';
 
 /*------------------------------------*\
   #BUTTON
@@ -86,7 +86,7 @@
 		}
 
 		&__googleLogo {
-			background-image: url('../../assets/images/google.svg');
+			background-image: url('./assets/google.svg');
 			width: 20px;
 			height: 20px;
 			margin-left: 19px;
@@ -103,11 +103,13 @@
 	}
 
 	@media (max-width: 500px) {
+
 		&--default,
 		&--send-magic {
 			width: 300px;
 			min-height: 50px;
 		}
+
 		&--google {
 			min-width: 100%;
 			border-bottom-left-radius: 0;
@@ -120,12 +122,13 @@
 @-moz-document url-prefix() {
 	.Button--google {
 		&__googleLogo {
-			background-image: url('/static/media/google.695a3160.svg');
+			background-image: url('./assets/google.svg');
 			width: 20px;
 			height: 20px;
 			position: relative;
 			top: 33px;
 		}
+
 		&__googleText {
 			position: relative;
 			top: 37px;

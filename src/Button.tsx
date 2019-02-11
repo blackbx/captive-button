@@ -8,9 +8,6 @@ import PureBaseComponent from "./PureBaseComponent";
 // Props
 import { Props } from "./Button.props";
 
-// Styles
-import "./Button.scss";
-
 export default class Button extends PureBaseComponent<Props> {
   render() {
     const {
