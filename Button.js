@@ -1,5 +1,5 @@
 import React from "react";
-import template from "./Button.jsx";
+import template from "./Button.tsx";
 
 class captivebutton extends React.Component {
     render() {
